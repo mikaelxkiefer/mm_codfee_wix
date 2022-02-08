@@ -3,26 +3,26 @@ ec.order = ec.order || {};
 ec.order.extraFields = ec.order.extraFields || {};
 
 ec.order.extraFields.tips = {
-    'title': 'COD Fee',
-    'type': 'toggleButtonGroup',
-    'options': [
+ 'title': 'COD Fee',
+ 'type': 'toggleButtonGroup',
+ 'options': [
     {
-      'title': 'Cash on Delivery Fee',
-      'subtitle': 'Pay online and save COD Cost',
-      'surcharge': 15
+ 'title': 'Cash on Delivery Fee',
+ 'subtitle': 'Pay online and save COD Cost',
+ 'surcharge': 15
     }
   ],
-  'surchargeType': 'ABSOLUTE',
-  'surchargeShortName': {
-    'name': 'COD Fee',
-    'showSurchargePercentValue': false,
-    'nameTranslated': {
-      'en': 'COD Fee',
+ 'surchargeType': 'ABSOLUTE',
+ 'surchargeShortName': {
+ 'name': 'COD Fee',
+ 'showSurchargePercentValue': false,
+ 'nameTranslated': {
+ 'en': 'COD Fee',
     }
   },
-  'showZeroSurchargeInTotal' : false,
-  'required': true,
-  'checkoutDisplaySection': 'payment_details'
+ 'showZeroSurchargeInTotal' : false,
+ 'required': true,
+ 'checkoutDisplaySection': 'payment_details'
 };
 
 Ecwid.refreshConfig && Ecwid.refreshConfig()
