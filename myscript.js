@@ -4,6 +4,23 @@ Ecwid.OnPageLoaded.add(function (page) {
         ec = ec || {};
         ec.order = ec.order || {};
         ec.order.extraFields = ec.order.extraFields || {};
+        
+         ec.order.extraFields.surcharge = {
+                    'value': 'COD Fee',
+                    "options": [
+                        {
+                            "title": "COD Fee",
+                            "surcharge": 15
+                        },
+                    ],
+                    "surchargeShortName": {
+                        "name": "COD Fee",
+                        "showSurchargePercentValue": false
+                    },
+                    'surchargeType': 'ABSOLUTE',
+         }
+         Ecwid.refreshConfig();
+        
 
         //wait for changes in the DOM
         const targetNode = document.querySelector('.ec-cart-step--payment .ec-radiogroup__item');
